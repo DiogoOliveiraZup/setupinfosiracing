@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SetupInfosiRacing</string>
+    <string name="toeintoeout">ToeIn - ToeOut</string>
+    <string name="toeintoeouttitle">ToeIn - ToeOut</string>
+    <string name="toeintoeouttext"><![CDATA[• Frente<br><br>- Quanto mais negativo(<b>toe out</b>) melhora entrada na curva e piora o contorno<br>- Quanto mais positivo ou zero (<b>toe in</b>) piora entrada de curva<br>- Maior toe in para curvas de raio curto ou 90º (positivo)<br>- Menor toe in para curvas longas (negativo ou próximo a zero)<br><br>• Traseira<br><br>- Quanto mais positivo (toe in) melhora frenagem e tem que controlar a saída de curva<br>﻿- Quanto mais negativo ou zero (toe out) piora entrada na curva e melhora saída de curva]]></string>
+    <string name="antirollbar">Barra Estabilizadora</string>
+    <string name="antirollbartitle">Barra Estabilizadora</string>
+    <string name="antirollbartext">Selecionou Barra Estabilizadora</string>
+    <string name="rideheight">Altura</string>
+    <string name="rideheighttitle">Altura</string>
+    <string name="rideheighttext">Selecionou ltura</string>
+    <string name="spring">Molas</string>
+    <string name="springtitle">Molas</string>
+    <string name="springtext">Selecionou Molas</string>
+</resources>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context="com.diogooliveira.setupinfo.setupinfosiracing.MainActivity">
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:background="@mipmap/iracinglogo"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp">
+
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center|left">
+
+    <RadioGroup
+        android:id="@+id/configsRadio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/toeInOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/toeintoeout"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/whiteColor"
+            android:buttonTint="@color/whiteColor"/>
+
+        <RadioButton
+            android:id="@+id/antirollbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/antirollbar"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/whiteColor"
+            android:buttonTint="@color/whiteColor"/>
+
+        <RadioButton
+            android:id="@+id/rideheight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rideheight"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/whiteColor"
+            android:buttonTint="@color/whiteColor"/>
+
+        <RadioButton
+            android:id="@+id/spring"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/spring"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/whiteColor"
+            android:buttonTint="@color/whiteColor"/>
+
+
+    </RadioGroup>
+
+     </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/whiteColor"
+        android:textStyle="bold|italic"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:layout_marginBottom="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/descriptionText"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/whiteColor"
+            android:textSize="12sp"
+            android:gravity="left|top"/>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

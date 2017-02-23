@@ -1,5 +1,6 @@
 package com.diogooliveira.setupinfo.setupinfosiracing;
 
+import android.content.pm.ActivityInfo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Html;
@@ -28,7 +29,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
-                                          configRadio.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
+            configRadio.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
 
@@ -38,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 if (checkedId == antirollbar.getId()){
                     titleText.setText(R.string.antirollbartitle);
-                    principalText.setText(R.string.antirollbartext);
+                    principalText.setText(Html.fromHtml(getResources().getString(R.string.antirollbartext)));
                 }
                 if (checkedId == spring.getId()){
                     titleText.setText(R.string.springtitle);

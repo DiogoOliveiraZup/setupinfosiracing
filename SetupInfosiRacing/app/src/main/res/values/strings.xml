@@ -2,10 +2,52 @@
     <string name="app_name">SetupInfosiRacing</string>
     <string name="toeintoeout">ToeIn - ToeOut</string>
     <string name="toeintoeouttitle">ToeIn - ToeOut</string>
-    <string name="toeintoeouttext"><![CDATA[• Frente<br><br>- Quanto mais negativo(<b>toe out</b>) melhora entrada na curva e piora o contorno<br>- Quanto mais positivo ou zero (<b>toe in</b>) piora entrada de curva<br>- Maior toe in para curvas de raio curto ou 90º (positivo)<br>- Menor toe in para curvas longas (negativo ou próximo a zero)<br><br>• Traseira<br><br>- Quanto mais positivo (toe in) melhora frenagem e tem que controlar a saída de curva<br>﻿- Quanto mais negativo ou zero (toe out) piora entrada na curva e melhora saída de curva]]></string>
+
+    <string name="toeintoeouttext"><![CDATA[
+
+    • Grau de inclinação das rodas no eixo Y<br><br>
+    • Afeta o comportamento do carro em curvas <br><br><br>
+
+    • <b>DIANTEIRA</b><br><br>
+
+     - Valores positivos(<b>TOE IN</b>): melhora entrada na curva e piora o contorno de curva(tende a espalhar a frente(UNDERSTEER) no meio da curva em curvas de raio longo).<br>
+     --------------------------------------------------<br>
+     - Valores negativos ou zero(<b>TOE OUT</b>): piora entrada de curva e melhora o contorno de curva(melhora o contorno nas curvas de raio longo).<br>
+     --------------------------------------------------<br>
+     - Valores positivos para curvas de raio curto ou 90º EX: chincane.<br>
+     --------------------------------------------------<br>
+     - Valores negativos ou zero: para curvas longas EX: laranja Interlagos.<br>
+     --------------------------------------------------<br><br>
+
+     • <b>TRASEIRA</b><br><br>
+     - Valores positivos (<b>TOE IN</b>): melhora frenagem(<b>mantem estabilidade na frenagem e resposta na entrada de curva</b>) mas piora o contorno de curva e tem controlar o acelerador na saída de curva(<b>piora a tração na saida de curva</b>)<br>
+     --------------------------------------------------<br>
+     ﻿- Valores negativos ou zero(<b>TOE OUT</b>): piora entrada na curva(<b>prejudica a estabilidade na frenagem e na entrada de curva</b>) mas melhora o contorno e a saída de curva(<b>melhora a tração na saida de curva)</b>.  gi<br>
+     --------------------------------------------------
+
+     ]]></string>
+
     <string name="antirollbar">Barra Estabilizadora</string>
     <string name="antirollbartitle">Barra Estabilizadora</string>
-    <string name="antirollbartext">Selecionou Barra Estabilizadora</string>
+    <string name="antirollbartext"><![CDATA[
+
+    • Transfere o peso de uma roda para outra em curvas. Esquerda para direita e vice-versa<br><br>
+    • Evita a rolagem de chassi(impedindo que a roda interna da curva perca contato com o solo).<br><br><br>
+
+    • <b>DIANTEIRA</b><br><br>
+     - Menor o valor: permite maior rolagem do chassi(O CHASSI ROLA PARA O LADO DE FORA DA CURVA SEMPRE), e melhora a entrada de curva(OVERSTEER). Porem causa excesso de peso na roda externa a curva causando maior desgaste de pneu.<br>
+     --------------------------------------------------<br>
+     - Maior valor: permite menor rolagem do chassi(O CHASSI ROLA PARA O LADO DE FORA DA CURVA SEMPRE), e piora a entrada de curva(UNDERSTEER) aplicando parte do peso que ia para as rodas externas para as rodas internas, evitando perda de contato das rodas internas com o solo.<br>
+     --------------------------------------------------<br><br>
+
+     • <b>TRASEIRA</b><br><br>
+     - Menor o valor: permite maior rolagem do chassi(O CHASSI ROLA PARA O LADO DE FORA DA CURVA SEMPRE), e melhora a entrada de curva(UNDERSTEER). Porem causa excesso de peso na roda externa a curva causando maior desgaste de pneu.<br>
+     --------------------------------------------------<br>
+     - Maior valor: permite menor rolagem do chassi(O CHASSI ROLA PARA O LADO DE FORA DA CURVA SEMPRE), e piora a entrada de curva(OVERSTEER) aplicando parte do peso que ia para as rodas externas para as rodas internas, evitando perda de contato das rodas internas com o solo.<br>
+     --------------------------------------------------
+
+     ]]></string>
+
     <string name="rideheight">Altura</string>
     <string name="rideheighttitle">Altura</string>
     <string name="rideheighttext">Selecionou ltura</string>

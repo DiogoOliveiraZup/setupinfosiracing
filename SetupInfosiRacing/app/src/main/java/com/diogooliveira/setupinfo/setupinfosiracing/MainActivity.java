@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     @Bind(R.id.toeInOut) RadioButton toeInOut;
     @Bind(R.id.antirollbar) RadioButton antirollbar;
     @Bind(R.id.rideheight) RadioButton rideheight;
-    @Bind(R.id.spring) RadioButton spring;
+    @Bind(R.id.damper) RadioButton spring;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,12 +45,12 @@ public class MainActivity extends AppCompatActivity {
                     principalText.setText(Html.fromHtml(getResources().getString(R.string.antirollbartext)));
                 }
                 if (checkedId == spring.getId()){
-                    titleText.setText(R.string.springtitle);
-                    principalText.setText(R.string.springtext);
+                    titleText.setText(R.string.dampertitle);
+                    principalText.setText(Html.fromHtml(getResources().getString(R.string.dampertext)));
                 }
                 if (checkedId == rideheight.getId()){
                     titleText.setText(R.string.rideheighttitle);
-                    principalText.setText(R.string.rideheighttext);
+                    principalText.setText(Html.fromHtml(getResources().getString(R.string.rideheighttext)));
                 }
 
             }

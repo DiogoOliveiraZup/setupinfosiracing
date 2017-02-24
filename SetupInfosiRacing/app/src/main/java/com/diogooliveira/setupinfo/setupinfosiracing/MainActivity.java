@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     @Bind(R.id.antirollbar) RadioButton antirollbar;
     @Bind(R.id.rideheight) RadioButton rideheight;
     @Bind(R.id.damper) RadioButton spring;
+    @Bind(R.id.differential) RadioButton differential;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +52,10 @@ public class MainActivity extends AppCompatActivity {
                 if (checkedId == rideheight.getId()){
                     titleText.setText(R.string.rideheighttitle);
                     principalText.setText(Html.fromHtml(getResources().getString(R.string.rideheighttext)));
+                }
+                if (checkedId == differential.getId()){
+                    titleText.setText(R.string.differentialtitle);
+                    principalText.setText(Html.fromHtml(getResources().getString(R.string.differentialtext)));
                 }
 
             }

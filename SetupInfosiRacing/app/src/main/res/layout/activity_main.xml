@@ -63,10 +63,19 @@
             android:buttonTint="@color/whiteColor"/>
 
         <RadioButton
-            android:id="@+id/damper"
+        android:id="@+id/damper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/damper"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/whiteColor"
+        android:buttonTint="@color/whiteColor"/>
+
+        <RadioButton
+            android:id="@+id/differential"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/damper"
+            android:text="@string/differential"
             android:layout_marginRight="10dp"
             android:textColor="@color/whiteColor"
             android:buttonTint="@color/whiteColor"/>

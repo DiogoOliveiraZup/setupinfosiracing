@@ -77,37 +77,65 @@
     <string name="dampertitle">Amortecedores</string>
     <string name="dampertext"><![CDATA[
 
-    • Controla a transferência de peso para as rodas(movimento vertical das rodas)<br><br>
+    • Controla a transferência de peso do carro<br><br>
     • Ajuda a manter o contato dos pneus com o solo em imperfeições da pista, frenagens, curvas e reacelerações<br><br>
-    • São dividios em amortecedores rápidos(zebras e ondulações) e lentos(aceleração, frenagem e curvas)<br><br><br>
+    • São dividios em amortecedores rápidos(zebras e ondulações) e lentos(aceleração, frenagem e curvas)<br><br>
+    • Amortecedores dianteiros entram em compressão na frenagen e descompressão na reaceleração<br><br>
+    • Amortecedores traseiros entram em compressão na reaceleração e descompressão na frenagem<br><br>
+    • Amortecedores da direita entram em compressão em curvas para a esquerda e descompressão em curvas para a direita(Peso é transferido para a esquerda do carro em entrada de curva)<br><br>
+    • Amortecedores da esquerda entram em compressão em curvas para a direita e descompressão em curvas para a esquerda(Peso é transferido para a direita do carro em entrada de curva)<br><br>
+    • Amortecedores muito macios(os 4 amortecedores) carro mais suave, porem pode causar rápida transferencia de peso no carro causando instabilidade e perda de aderência<br><br>
+    • Geralmente é melhor ajustar os amortecedores lentos depois os rápidos<br><br>
+    • Ideal trabalhar com ajustes inversos(se aumenta o bump diminui o rebound)<br><br>
+    • Amortecedores muito duros(os 4 amortecedores) carro mais responsivo e firme, porem pode causar perda de estabilidade em situações de ondulações, podendo causar a perda de controle<br><br><br>
 
-    • <b>DIANTEIROS FAST BUMP E FAST REBOUND</b><br><br>
-     - Valores maiores(Fast bump): Aumenta a resposta de compressão dos amortecedores dianteiros, em imperfeições da pista ou zebras(valores muito altos podem fazer o carro pular em ondulações e zebras).<br>
+
+    • <b>FAST BUMP E FAST REBOUND</b><br><br>
+     - Valores maiores(Fast bump): Aumenta a rigidez de compressão dos amortecedores dianteiros, em imperfeições da pista ou zebras(valores muito altos podem fazer o carro pular em ondulações e zebras devido a transferir os impactos para o chassi).<br>
      --------------------------------------------------<br>
-     - Valores menores(Fast bump): Diminui a resposta de compressão dos amortecedores dianteiros, em imperfeiçoes da pista ou zebras(valores muito baixos podem fazer as rodas subirem muito rápido e fazer o carro tocar o solo).<br>
+     - Valores menores(Fast bump): Diminui a rigidez de compressão dos amortecedores dianteiros, em imperfeiçoes da pista ou zebras(valores muito baixos diminuem impactos transferidos ao chassi, porém a transferencia de peso é muito rápida podendo causar rolagem do chassi).<br>
      --------------------------------------------------<br>
-     - Valores maiores(Fast rebound): Aumenta a resposta de descompressão dos amortecedores dianteiros após a mola ser comprimida(valores muito altos podem fazer o carro demorar para fazer a roda voltar ao solo).<br>
+     - Valores maiores(Fast rebound): Aumenta a rigidez de descompressão dos amortecedores dianteiros após a mola ser comprimida(valores muito altos podem fazer o carro demorar para fazer a roda voltar ao solo).<br>
      --------------------------------------------------<br>
-     - Valores menores(Fast rebound): Diminui a resposta de descompressão dos amortecedores dianteiros, em imperfeiçoes da pista ou zebras(valores muito baixos podem fazer as rodas subirem muito e fazer o carro tocar o solo).<br>
+     - Valores menores(Fast rebound): Diminui a rigidez de descompressão dos amortecedores dianteiros, em imperfeiçoes da pista ou zebras(valores muito baixos podem fazer as rodas subirem muito e fazer o carro tocar o solo).<br>
      --------------------------------------------------<br><br>
 
-     • <b>DIANTEIROS LOW BUMP E LOW REBOUND</b><br><br>
-     - Mais camber (VALORES NEGATIVOS): prejudica a entrada com demora em resposta do carro em relação a curva, porem o carro durante o contorno das curvas ele será mais estavel(Ideal para pistas com curvas de media e alta velocidade).<br>
+     • <b>SLOW BUMP E SLOW REBOUND</b><br><br>
+     - Valores maiores(Slow bump): Aumenta a rigidez de compressão dos amortecedores dianteiros em curvas, reacelerações e frenagens(valores muito podem atrasar o recebimento de peso nas rodas dianteiras).<br>
      --------------------------------------------------<br>
-     - Menos camber (VALORES PROXIMOS DE 0 OU POSITIVOS): melhora a entrada de curva, porem perde estabilidade no contorno das curvas(Ideal para pistas com curvas de baixa velocidade)<br>
-     --------------------------------------------------<br><br>
+     - Valores menores(Slow bump): Diminui a rigidez de compressão dos amortecedores dianteiros em curvas, reacelerações e frenagens(…).<br>
+     --------------------------------------------------<br>
+     - Valores maiores(Slow rebound): Aumenta a rigidez de descompressão dos amortecedores dianteiros após a mola ser comprimida(…).<br>
+     --------------------------------------------------<br>
+     - Valores menores(Slow rebound): Diminui a rigidez de descompressão dos amortecedores dianteiros, em imperfeiçoes da pista ou zebras(…).<br>
+     --------------------------------------------------<br><br><br>
 
-     • <b>TRASEIROS FAST BUMP E FAST REBOUND</b><br><br>
-     - Mais camber (VALORES NEGATIVOS): prejudica a entrada com demora em resposta do carro em relação a curva, porem o carro durante o contorno das curvas ele será mais estavel(Ideal para pistas com curvas de media e alta velocidade).<br>
-     --------------------------------------------------<br>
-     - Menos camber (VALORES PROXIMOS DE 0 OU POSITIVOS): melhora a entrada de curva, porem perde estabilidade no contorno das curvas(Ideal para pistas com curvas de baixa velocidade)<br>
-     --------------------------------------------------<br><br>
+     ]]></string>
 
-     • <b>TRASEIROS LOW BUMP E LOW REBOUND</b><br><br>
-     - Mais camber (VALORES NEGATIVOS): Maior estabilidade no contorno de curvas, porem gera perda de tração em retomadas devido a area de contato com o solo ser reduzido (Ideal para pistas com curvas de media e alta velocidade)<br>
+    <string name="differential">Diferencial</string>
+    <string name="differentialtitle">Diferencial</string>
+    <string name="differentialtext"><![CDATA[
+
+    • Distribui a rotação das rodas<br><br>
+    • Faz a roda externa girar mais que a roda interna da curva(forçando o carro a entrar na curva)<br><br><br>
+
+
+     • <b>PRÉ CARGA</b><br><br>
+     - Valores maiores: aumenta o tempo de transferência de diferencial.<br>
+     - Valores menores: diminui o tempo de transferência de diferencial.<br><br>
+     --------------------------------------------------<br><br><br>
+
+     • <b>DESACELERAÇÃO</b><br><br>
+     - Valores maiores: Permite que as rodas externas girem mais que a interna, gerando melhor entrada de curva(ENQUANTO DESACELERANDO)(valores muito alto podem causar excesso de rotação na rota externa gerando (OVERSTEER)).<br>
      --------------------------------------------------<br>
-     - Menos camber (VALORES PROXIMOS DE 0 OU POSITIVOS): Menor estabilidade no contorno de curvas, porem gera ganho de tração em retomadas(Ideal para pistas com curvas de baixa velocidade)<br>
-     --------------------------------------------------
+     - Valores menores: Iguala a rotatAção das rodas interna e externa gerando maior tração em linha reta e prejudicando o contorno de curva(ENQUANTO DESACELERANDO)(valores menores causam dificuldade de contorno de curva).<br>
+     --------------------------------------------------<br><br><br>
+
+     • <b>POTENCIA(ACELERAÇÃO)</b><br><br>
+     - Valores maiores: Permite que as rodas externas girem mais que a interna, gerando melhor entrada de curva(ENQUANTO ACELERANDO)(valores muito alto podem causar excesso de rotação na rota externa gerando (OVERSTEER)).<br>
+     --------------------------------------------------<br>
+     - Valores menores: Iguala a rotatAção das rodas interna e externa gerando maior tração em linha reta e prejudicando o contorno de curva(ENQUANTO ACELERANDO)(valores menores causam dificuldade de contorno de curva).<br>
+     --------------------------------------------------<br><br><br>
 
      ]]></string>
 

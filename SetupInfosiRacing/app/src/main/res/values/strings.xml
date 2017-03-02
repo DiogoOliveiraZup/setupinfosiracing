@@ -139,4 +139,99 @@
 
      ]]></string>
 
+
+    <string name="tiresmp430">Pneus</string>
+    <string name="tiresmp430title">Pneus</string>
+    <string name="tiresmp430text"><![CDATA[
+
+    <b>Pressão inicial dos pneus:</b> Pressão de ar no pneu, medida quando o pneu é aquecido com aquecedores de pneus (100C); Menor pressão = mais acúmulo de calor, melhor aderência em cargas menores; Maior pressão menos calor, melhor aderência em cargas maiores.<br>
+    --------------------------------------------------<br>
+    <b>Última pressão quente:</b> Leitura de pressão de ar quando o carro fez pitstop, ou quando o piloto saiu (pressionou Esc), menor pressão = mais acúmulo de calor, melhor aderência em cargas mais baixas, maior pressão = menos calor, melhor aderência em cargas mais elevadas.<br>
+    --------------------------------------------------<br>
+    <b>Última temperatura quente:</b> Temperaturas Externa, Meio e Interna dos pneus quando o carro fez pitstop, ou quando o piloto saiu (pressionou Esc); Temperatura do meio é útil para comparar o trabalho feito a cada curva, a diferença de Externa / Interna é útil para ajustar a Cambager.<br>
+    --------------------------------------------------<br>
+    <b>Porcentagem dos pneus:</b> Porcentagem restante Externa, Meio e Interna dos pneus quando o carro fez pitstop, ou quando o piloto saiu (pressionou Esc); Porcentagem do meio é útil para comparar o trabalho feito a cada curva, a diferença de Externa / Interna é útil para ajustar a Cambager.<br>
+
+
+    ]]></string>
+
+    <string name="aeropackage">Pacote aerodinâmico</string>
+    <string name="aeropackagemp430title">Pacote Aeroninâmico</string>
+    <string name="aeropackagemp430text"><![CDATA[
+
+    <b>Tipo de downforce:</b> Diferentes configurações de downforce estão disponíveis para este carro com diferentes tipos de downforce, a melhor escolha depende do tipo de pista de corrida: em pistas de media-baixa velocidade selecione "high", em pistas de média velocidade selecione "medium" ou "high". Em pistas rápidas use "médio" ou "baixo".<br>
+    --------------------------------------------------<br>
+    <b>Configurações da asa dianteira:</b> Configurações da asa dianteira é a posição do ajustador na asa; Um ajuste de asa dianteira mais alto produz um ângulo maior e mais downforce, um pouco mais de downforce, e um deslocamento de equilíbrio aerodinâmico para a frente (oversteer).<br>
+    --------------------------------------------------<br>
+    <b>Wicker da asa traseira:</b> Maiores wickers(pequena aleta na ponta da asa) de asa traseira aumentam downforce, downforce, bem como um balanço aerodinâmico de equilíbrio para trás (understeer), enquanto que wickers menores diminuem downforce, downforce e deslocam o equilíbrio aerodinâmico para a frente (oversteer).<br>
+
+
+    ]]></string>
+
+
+    <string name="aerocalculator">Calculadora aerodinâmica</string>
+    <string name="aerocalculatormp430title">Calculadora Aeroninâmica</string>
+    <string name="aerocalculatormp430text"><![CDATA[
+
+    • Nota: Esta seção é apenas para fins de cálculo<br><br>
+    Use a ajuste de asa dianteira / wicker acima(Pacote aerodinâmico) e a altura do carro em velocidade(A altura do carro muda conforme a velocidade devido ao ar que passa pelo carro) abaixo para calcular o equilíbrio aerodinâmico<br><br><br>
+
+    <b>Altura do carro(Dianteira) em movimento(Velocidade) :</b> Como o carro passeando pelo traçado da pista suas alturas mudam; Altura traseira em velocidade(quando o carro esta se movendo) representa uma maneira de entender como altura traseira afeta o carro aerodinamicamente usando a "Calculadora Aerodinâmica", você faz mudanças na altura traseira em conjunto com altura dianteira, use telemetry para descobrir as alturas em velocidade em diferentes partes da pista.<br>
+    --------------------------------------------------<br>
+    <b>Altura do carro(Traseira) em movimento(Velocidade) :</b> Como o carro passeando pelo traçado da pista suas alturas mudam; Altura traseira em velocidade(quando o carro esta se movendo) representa uma maneira de entender como altura traseira afeta o carro aerodinamicamente usando a "Calculadora Aerodinâmica", você faz mudanças na altura traseira em conjunto com altura dianteira, use telemetry para descobrir as alturas em velocidade em diferentes partes da pista.<br>
+    --------------------------------------------------<br>
+    <b>downforce dianteiro :</b> Porcentagem do downforce total que está sendo aplicado a através do eixo dianteiro; É também referido pelo equilibrio aerodinâmico; Quanto maior a porcentagem mais oveerster, menor a porcentagem mais understeer.<br>
+    --------------------------------------------------<br>
+    <b>Downforce para arrasto :</b> Downforce para arrasto é uma proporção de como a produção de downforce é eficiente; Produzindo mais downforce também produz mais arrasto: otimizando essa proporção sem perder o downforce total fará seu carro mais rápido.<br>
+
+    ]]></string>
+
+    <string name="frontchassi">Ajuste dianteiro</string>
+    <string name="frontchassimp430title">Ajuste dianteiro</string>
+    <string name="frontchassimp430text"><![CDATA[
+
+    <b>Lastro(Peso):</b> Movendo o lastro para frente ou para trás afeta o nariz do carro;Mover para frente = mais understeer.<br>
+    --------------------------------------------------<br>
+    <b>Peso no nariz :</b> porcentagem do peso do carro nos pneus da frente; Geralmente maior peso no nariz = mais understeer..<br>
+    --------------------------------------------------<br>
+    <b>Peso diagonal :</b> Porcentagem de peso do veículo nos pneus dianteiros direito e traseiros esquerdo; Mais peso diagonal = mais Understeer nas curvas à esquerda, mais oversteer nas curvas à direita; 50% geralmente é melhor.<br>
+    --------------------------------------------------<br>
+    <b>Taxa da Barra Anti-rolagem(BAR) :</b> alterando da taxa de Barra Anti-rolagem(BAR) equivale a uma alteração do diâmetro da BAR; Mais taxa de BAR = mais understeer.<br>
+    --------------------------------------------------<br>
+    <b>Pré carga da Barra Anti-rolagem(BAR) :</b> O ajuste da pré-carga da Barra Anti-rolagem permite mudanças rápidas na carga de torção que a Barra Anti-rolagem vê na garagem na inspeção, o melhor é ajustar este valor próximo a zero depois de fazer outras mudanças no carro.<br>
+    --------------------------------------------------<br>
+    <b>Velocidade de elevação:</b> A velocidade de elevação é a rigidez de uma mola de centro, que acrescenta rigidez somente no movimento de elevação(salto ou trepidação) mas não na rolagem do chassi, as molas mais duras controlam melhor a altura do chassi (menos mudança de altura) que é bom para aerodinâmica e o controle de cambagem, mas para aderência mecanica  é frequentemente melhor com molas mais macias.<br>
+     --------------------------------------------------<br>
+    <b>Compensação da perna de elevação:</b> Ajusta a altura em que a mola está instalada em um sino-manivelas que se conectam em ambos os lados da suspensão, ajustando a perna elevação vai levantar ou abaixar o chassi e adicionar cliques esquerdos para a perna elevação, se a deflexão da mola é zero, conhecido como "flutuando"; Corretamente deve haver muito pouca deflexão..<br><br>
+
+    • Adicione cliques para a esquerda na Comepnsação da Perna de Elevação se a Deflexão da mola é 0<br><br>
+
+    <b>Deflexão da mola:</b> Exibe o quanto a Deflexão da mola está presente na garagem; O MP4-30 só passará pela inspeção com pouco mais de 0 na Deflexão da mola; Adicionar cliques esquerdos para a Compensação da perna de elevação se a deflexão da mola é 0, sabe como "flutuante"; Definindo corretamente este valor deve ser mais próximo de 0 sem combustível.<br>
+     --------------------------------------------------<br>
+    <b>Convergência dianteira(Toe-in e Toe-out):</b> Toe-in significa que as rodas esquerda e direita são orientadas em direção umas às outras, toe-in negativo(Siginifica toe-out) significa que as rodas esquerda e direita são dirigidas para longe uma da outra, aplicar toe-out na frente, menos Toe-Out na frente = menor acúmulo de temperatura, mais Toe-Out na frente = melhor entrada de curva e maior estabilidade em linha reta.<br>
+     --------------------------------------------------<br><br>
+
+     • Nota: Procedimento apropriado é ajustar o valor da Deflexão da mola perto de zero sem carga de combustível, então adicione o combustível.<br>
+
+     ]]></string>
+
+    <string name="frontleftandrightchassi">Ajuste dianteiro(Esquerdo/Direito)</string>
+    <string name="frontleftandrightchassimp430title">Ajuste dianteiro(Esquerdo/Direito)</string>
+    <string name="frontleftandrightchassimp430text"><![CDATA[
+
+    <b>Peso de canto:</b> Peso no pneu neste canto(Direita/Esquerda) do carro quando o carro está parado no chão nivelado (peso estático).<br>
+    --------------------------------------------------<br>
+    <b>Altura :</b> Distância do solo até um ponto no ponto de referência do chassi (parte inferior da cuba do chassis) projetada para o eixo da roda dianteira; Um valor 0 ou negativo na telemetria quanto estiver na pista pode não significar o chassi em toca o chão, pois depende da atitude do chassi na pista, altura relativa de lado a lado e questão de dianteira para  a traseira para a performance aerodinâmica - veja a calculadora aerodinâmica.<br>
+    --------------------------------------------------<br>
+    <b>Compensação da barra de torção :</b> Ajusta a pré-carga da barra de torção; Usado para ajustar a altura do carro assim como com a mola helicoidal(Espiral) mais convencional.<br>
+    --------------------------------------------------<br>
+    <b>Taxa da Barra Anti-rolagem(BAR) :</b> alterando da taxa de Barra Anti-rolagem(BAR) equivale a uma alteração do diâmetro da BAR; Mais taxa de BAR = mais understeer.<br>
+    --------------------------------------------------<br>
+    <b>Taxa de barra de torção :</b> Em vez de molas helicoidais, este carro usa molas de barra de torsão, barras de torsão mais rígidas controlam a atitude do chassi melhor (Menos rolagem ou trepidação) o que é bom para aerodinâmica e controle de cambagem, mas o grip mecânico é muitas vezes melhor com molas mais macias..<br>
+    --------------------------------------------------<br>
+    <b>Cambagem:</b> Inclinação interna (negativa) ou externa (positiva) da roda, mais inclinação = mais força de encurvamento(carro tem mais força na curva) na direcção da inclinação, mais desgaste e calor, menor capacidade de frenagem.<br>
+     --------------------------------------------------<br>
+
+    ]]></string>
+
 </resources>

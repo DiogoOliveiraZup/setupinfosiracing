@@ -12,20 +12,39 @@
     android:background="@color/colorPrimary"
     tools:context="com.diogooliveira.setupinfo.setupinfosiracing.MainActivity">
 
-    <ImageView
-        android:layout_width="130dp"
-        android:layout_height="30dp"
-        android:background="@mipmap/iracinglogo"
-        android:layout_gravity="center"
-        android:layout_marginBottom="10dp"/>
-
-    <HorizontalScrollView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/iracinglogo"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@mipmap/backbutton"
+            android:layout_gravity="right"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/backbutton" />
+
+    </RelativeLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="20dp">
 
      <LinearLayout
-         android:layout_width="wrap_content"
+         android:layout_width="match_parent"
          android:layout_height="wrap_content"
          android:layout_gravity="center|left">
 
@@ -33,7 +52,7 @@
         android:id="@+id/configsRadio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
         <RadioButton
             android:id="@+id/toeInOut"
@@ -80,12 +99,100 @@
             android:textColor="@color/whiteColor"
             android:buttonTint="@color/whiteColor"/>
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:background="@mipmap/mp430"
+                android:layout_gravity="left"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Ajustes MP4-30"
+                android:textStyle="bold|italic"
+                android:gravity="right"
+                android:textColor="@color/whiteColor"
+                android:textSize="15sp"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Pneus / Aerodinâmica"
+            android:textStyle="bold|italic"
+            android:gravity="center"
+            android:textColor="@color/whiteColor"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"/>
+
+        <RadioButton
+            android:id="@+id/tires"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tiresmp430"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/whiteColor"
+            android:buttonTint="@color/whiteColor"/>
+
+        <RadioButton
+            android:id="@+id/aeropackage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/aeropackage"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/whiteColor"
+            android:buttonTint="@color/whiteColor"/>
+
+        <RadioButton
+            android:id="@+id/aerocalculator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/aerocalculator"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/whiteColor"
+            android:buttonTint="@color/whiteColor"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Chassi"
+            android:textStyle="bold|italic"
+            android:gravity="center"
+            android:textColor="@color/whiteColor"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"/>
+
+        <RadioButton
+            android:id="@+id/frontchassi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/frontchassi"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/whiteColor"
+            android:buttonTint="@color/whiteColor"/>
+
+        <RadioButton
+            android:id="@+id/frontleftrightchassi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/frontleftandrightchassi"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/whiteColor"
+            android:buttonTint="@color/whiteColor"/>
+
 
     </RadioGroup>
 
      </LinearLayout>
 
-    </HorizontalScrollView>
+    </ScrollView>
 
     <TextView
         android:id="@+id/titleText"

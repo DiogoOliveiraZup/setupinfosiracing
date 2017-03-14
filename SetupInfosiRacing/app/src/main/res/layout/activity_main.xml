@@ -99,6 +99,13 @@
             android:textColor="@color/whiteColor"
             android:buttonTint="@color/whiteColor"/>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/whiteColor"
+            android:layout_marginBottom="5dp"
+            android:alpha="0.5"/>
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -116,9 +123,17 @@
                 android:textStyle="bold|italic"
                 android:gravity="right"
                 android:textColor="@color/whiteColor"
-                android:textSize="15sp"/>
+                android:textSize="15sp"
+                android:layout_marginRight="15dp"/>
 
         </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/whiteColor"
+            android:layout_marginBottom="5dp"
+            android:alpha="0.5"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -128,7 +143,7 @@
             android:textStyle="bold|italic"
             android:gravity="center"
             android:textColor="@color/whiteColor"
-            android:textSize="15sp"
+            android:textSize="20sp"
             android:layout_marginTop="10dp"/>
 
         <RadioButton
@@ -158,6 +173,13 @@
             android:textColor="@color/whiteColor"
             android:buttonTint="@color/whiteColor"/>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/whiteColor"
+            android:layout_marginBottom="0dp"
+            android:alpha="0.5"/>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -166,7 +188,7 @@
             android:textStyle="bold|italic"
             android:gravity="center"
             android:textColor="@color/whiteColor"
-            android:textSize="15sp"
+            android:textSize="20sp"
             android:layout_marginTop="10dp"/>
 
         <RadioButton
@@ -187,6 +209,58 @@
             android:textColor="@color/whiteColor"
             android:buttonTint="@color/whiteColor"/>
 
+        <RadioButton
+            android:id="@+id/rearleftrightchassi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rearleftandrightchassi"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/whiteColor"
+            android:buttonTint="@color/whiteColor"/>
+
+        <RadioButton
+            android:id="@+id/rearchassi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rearchassi"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/whiteColor"
+            android:buttonTint="@color/whiteColor"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/whiteColor"
+            android:layout_marginBottom="0dp"
+            android:alpha="0.5"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Amortecedores"
+            android:textStyle="bold|italic"
+            android:gravity="center"
+            android:textColor="@color/whiteColor"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"/>
+
+        <RadioButton
+            android:id="@+id/dampers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dampers"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/whiteColor"
+            android:buttonTint="@color/whiteColor"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/whiteColor"
+            android:layout_marginBottom="0dp"
+            android:alpha="0.5"/>
+
 
     </RadioGroup>
 
@@ -202,7 +276,7 @@
         android:textStyle="bold|italic"
         android:gravity="center"
         android:layout_gravity="center"
-        android:textSize="30sp"
+        android:textSize="25sp"
         android:layout_marginBottom="20dp"/>
 
     <LinearLayout

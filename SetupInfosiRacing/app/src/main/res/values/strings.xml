@@ -22,7 +22,7 @@
      • <b>TRASEIRA</b><br><br>
      - Valores positivos (<b>TOE IN</b>): melhora frenagem(<b>mantem estabilidade na frenagem e resposta na entrada de curva</b>) mas piora o contorno de curva e tem controlar o acelerador na saída de curva(<b>piora a tração na saida de curva</b>)<br>
      --------------------------------------------------<br>
-     ﻿- Valores negativos ou zero(<b>TOE OUT</b>): piora entrada na curva(<b>prejudica a estabilidade na frenagem e na entrada de curva</b>) mas melhora o contorno e a saída de curva(<b>melhora a tração na saida de curva)</b>.  gi<br>
+     -  piora entrada na curva(<b>prejudica a estabilidade na frenagem e na entrada de curva</b>) mas melhora o contorno e a saída de curva(<b>melhora a tração na saida de curva)</b><br>
      --------------------------------------------------
 
      ]]></string>
@@ -202,13 +202,13 @@
     --------------------------------------------------<br>
     <b>Velocidade de elevação:</b> A velocidade de elevação é a rigidez de uma mola de centro, que acrescenta rigidez somente no movimento de elevação(salto ou trepidação) mas não na rolagem do chassi, as molas mais duras controlam melhor a altura do chassi (menos mudança de altura) que é bom para aerodinâmica e o controle de cambagem, mas para aderência mecanica  é frequentemente melhor com molas mais macias.<br>
      --------------------------------------------------<br>
-    <b>Compensação da perna de elevação:</b> Ajusta a altura em que a mola está instalada em um sino-manivelas que se conectam em ambos os lados da suspensão, ajustando a perna elevação vai levantar ou abaixar o chassi e adicionar cliques esquerdos para a perna elevação, se a deflexão da mola é zero, conhecido como "flutuando"; Corretamente deve haver muito pouca deflexão..<br><br>
+    <b>Compensação da perna de elevação:</b> Ajusta a altura em que a mola está instalada em um sino-manivelas que se conectam em ambos os lados da suspensão, ajustando a perna elevação vai levantar ou abaixar o chassi e adicionar cliques esquerdos para a perna elevação, se a deflexão da mola é zero, conhecido como "flutuando"; Corretamente deve haver muito pouca deflexão.<br><br>
 
     • Adicione cliques para a esquerda na Comepnsação da Perna de Elevação se a Deflexão da mola é 0<br><br>
 
     <b>Deflexão da mola:</b> Exibe o quanto a Deflexão da mola está presente na garagem; O MP4-30 só passará pela inspeção com pouco mais de 0 na Deflexão da mola; Adicionar cliques esquerdos para a Compensação da perna de elevação se a deflexão da mola é 0, sabe como "flutuante"; Definindo corretamente este valor deve ser mais próximo de 0 sem combustível.<br>
      --------------------------------------------------<br>
-    <b>Convergência dianteira(Toe-in e Toe-out):</b> Toe-in significa que as rodas esquerda e direita são orientadas em direção umas às outras, toe-in negativo(Siginifica toe-out) significa que as rodas esquerda e direita são dirigidas para longe uma da outra, aplicar toe-out na frente, menos Toe-Out na frente = menor acúmulo de temperatura, mais Toe-Out na frente = melhor entrada de curva e maior estabilidade em linha reta.<br>
+    <b>Convergência dianteira(Toe-in e Toe-out):</b> Toe-in significa que as rodas esquerda e direita são orientadas em direção umas às outras, toe-in negativo(Siginifica toe-out) significa que as rodas esquerda e direita são dirigidas para longe uma da outra, aplicando toe-out na frente, menos Toe-Out na frente = menor acúmulo de temperatura, mais Toe-Out na frente = melhor entrada de curva e maior estabilidade em linha reta.<br>
      --------------------------------------------------<br><br>
 
      • Nota: Procedimento apropriado é ajustar o valor da Deflexão da mola perto de zero sem carga de combustível, então adicione o combustível.<br>
@@ -233,5 +233,71 @@
      --------------------------------------------------<br>
 
     ]]></string>
+
+    <string name="rearleftandrightchassi">Ajuste traseiro(Esquerdo/Direito)</string>
+    <string name="rearleftandrightchassimp430title">Ajuste traseiro(Esquerdo/Direito)</string>
+    <string name="rearleftandrightchassimp430text"><![CDATA[
+
+    <b>Peso de canto:</b> Peso no pneu neste canto(Direita/Esquerda) do carro quando o carro está parado no chão nivelado (peso estático).<br>
+    --------------------------------------------------<br>
+    <b>Altura :</b> Distância do solo até um ponto no ponto de referência do chassi (parte inferior da cuba do chassis) projetada para o eixo da roda dianteira; Um valor 0 ou negativo na telemetria quanto estiver na pista pode não significar o chassi em toca o chão, pois depende da atitude do chassi na pista, altura relativa de lado a lado e questão de dianteira para  a traseira para a performance aerodinâmica - veja a calculadora aerodinâmica.<br>
+    --------------------------------------------------<br>
+    <b>Compensação da barra de torção :</b> Ajusta a pré-carga da barra de torção; Usado para ajustar a altura do carro assim como com a mola helicoidal(Espiral) mais convencional.<br>
+    --------------------------------------------------<br>
+    <b>Taxa da Barra Anti-rolagem(BAR) :</b> alterando da taxa de Barra Anti-rolagem(BAR) equivale a uma alteração do diâmetro da BAR; Mais taxa de BAR = mais understeer.<br>
+    --------------------------------------------------<br>
+    <b>Taxa de barra de torção :</b> Em vez de molas helicoidais, este carro usa molas de barra de torsão, barras de torsão mais rígidas controlam a atitude do chassi melhor (Menos rolagem ou trepidação) o que é bom para aerodinâmica e controle de cambagem, mas o grip mecânico é muitas vezes melhor com molas mais macias..<br>
+    --------------------------------------------------<br>
+    <b>Cambagem:</b> Inclinação interna (negativa) ou externa (positiva) da roda, mais inclinação = mais força de encurvamento(carro tem mais força na curva) na direcção da inclinação, mais desgaste e calor, menor capacidade de frenagem.<br>
+     --------------------------------------------------<br>
+    <b>Convergência traseira:</b> oe-in significa que as rodas esquerda e direita são orientadas em direção uma a outra, negativo toe-in (toe-out) significa que as rodas esquerda e direita são orientados longe uma da outra, aplicando toe-out na traseira, menos Toe-In na traseira = menor acúmulo de temperatura, mais Toe-In na traseira = maior estabilidade em linha reta.<br>
+     --------------------------------------------------<br>
+
+    ]]></string>
+
+    <string name="rearchassi">Ajuste traseiro</string>
+    <string name="rearchassimp430title">Ajuste traseiro</string>
+    <string name="rearchassimp430text"><![CDATA[
+
+    <b>Combustível:</b> Quantidade de combustível no tanque;por favor note que não é possivel reabastecer durante a corrida.<br>
+    --------------------------------------------------<br>
+    <b>Altura :</b> Distância do solo até um ponto no ponto de referência do chassi (parte inferior da cuba do chassis) projetada para o eixo da roda dianteira; Um valor 0 ou negativo na telemetria quanto estiver na pista pode não significar o chassi em toca o chão, pois depende da atitude do chassi na pista, altura relativa de lado a lado e questão de dianteira para  a traseira para a performance aerodinâmica - veja a calculadora aerodinâmica.<br>
+    --------------------------------------------------<br>
+    <b>Taxa da Barra Anti-rolagem(BAR) :</b> alterando da taxa de Barra Anti-rolagem(BAR) equivale a uma alteração do diâmetro da BAR; Mais taxa de BAR = mais oversteer.<br>
+    --------------------------------------------------<br>
+    <b>Pré carga da Barra Anti-rolagem(BAR) :</b> O ajuste da pré-carga da Barra Anti-rolagem permite mudanças rápidas na carga de torção que a Barra Anti-rolagem vê na garagem na inspeção, o melhor é ajustar este valor próximo a zero depois de fazer outras mudanças no carro.<br>
+    --------------------------------------------------<br>
+    <b>Velocidade de elevação:</b> A velocidade de elevação é a rigidez de uma mola de centro, que acrescenta rigidez somente no movimento de elevação(salto ou trepidação) mas não na rolagem do chassi, as molas mais duras controlam melhor a altura do chassi (menos mudança de altura) que é bom para aerodinâmica e o controle de cambagem, mas para aderência mecanica  é frequentemente melhor com molas mais macias.<br>
+     --------------------------------------------------<br>
+    <b>Compensação da perna de elevação:</b> Ajusta a altura em que a mola está instalada em um sino-manivelas que se conectam em ambos os lados da suspensão, ajustando a perna elevação vai levantar ou abaixar o chassi e adicionar cliques esquerdos para a perna elevação, se a deflexão da mola é zero, conhecido como "flutuando"; Corretamente deve haver muito pouca deflexão..<br><br>
+
+   • Adicione cliques para a esquerda na Comepnsação da Perna de Elevação se a Deflexão da mola é 0<br><br>
+
+    <b>Deflexão da mola:</b> Exibe o quanto a Deflexão da mola está presente na garagem; O MP4-30 só passará pela inspeção com pouco mais de 0 na Deflexão da mola; Adicionar cliques esquerdos para a Compensação da perna de elevação se a deflexão da mola é 0, sabe como "flutuante"; Definindo corretamente este valor deve ser mais próximo de 0 sem combustível.<br>
+     --------------------------------------------------<br>
+    <b>Convergência dianteira(Toe-in e Toe-out):</b> Toe-in significa que as rodas esquerda e direita são orientadas em direção umas às outras, toe-in negativo(Siginifica toe-out) significa que as rodas esquerda e direita são dirigidas para longe uma da outra, aplicando toe-out na frente, menos Toe-Out na frente = menor acúmulo de temperatura, mais Toe-Out na frente = melhor entrada de curva e maior estabilidade em linha reta.<br>
+     --------------------------------------------------<br><br>
+
+     • Nota: Procedimento apropriado é ajustar o valor da Deflexão da mola perto de zero sem carga de combustível, então adicione o combustível.<br>
+
+     ]]></string>
+
+    <string name="dampers">Amortecedores</string>
+    <string name="dampesmp430title">Amortecedores</string>
+    <string name="dampersmp430text"><![CDATA[
+
+    • Nota: Todos esses ajustes são aplicaveis para todas a partes do carro(Dianteira/Traseira/Esquerda/Direita).<br><br>
+
+    <b>Compressão lenta:</b> A compressão lenta afeta principalmente a rápidez com que a carga é transferida para este pneu em (Aceleração/frenangem e curvas) quando a mola é comprimida. Maior compressão lenta o pneu recebe a carga mais rapidamente.<br>
+    --------------------------------------------------<br>
+    <b>Descompressão lenta :</b> A Descompressão lenta afeta principalmente a rápidez com que a mola se estende no (Aceleração/frenangem e curvas). Maior Descompressão lenta retarda o tempo que a mola se estende..<br>
+    --------------------------------------------------<br>
+    <b>Compressão rápida :</b> A Compressão Rápida afeta principalmente como este canto do carro responde sobre ondulações e zebras(Quando a mola é comprimida e armazena a carga recebida de ondulações ou zebras). Deve ser ajustado para encontrar o melhor desempenho.<br>
+    --------------------------------------------------<br>
+    <b>Descompressão rápida :</b> A Descompressão Rápida afeta principalmente como este canto do carro responde sobre ondulações e zebras(Quando a mola é descomprimida e empurra a roda de volta para baixo após uma compressão). Deve ser ajustado para encontrar o melhor desempenho..<br>
+    --------------------------------------------------<br>
+    <b>Massa do inerciador :</b> Um inerciador é um dispositivo que adiciona massa inercial a um sistema; Como uma suspensão se move para cima ou para baixo o inerciador produz uma força proporcional na direção oposta para tentar suavizar as oscilações da suspensão para manter o pneu em melhor contato com o asfato para gerar mais aderência, dependendo da curva, mais inerter pode ser melhor, teste quantidades diferentes em pistas diferentes.<br>
+
+     ]]></string>
 
 </resources>

@@ -34,6 +34,9 @@ public class MainActivity extends AppCompatActivity {
     @Bind(R.id.aerocalculator) RadioButton aerocalculator;
     @Bind(R.id.frontchassi) RadioButton frontchassi;
     @Bind(R.id.frontleftrightchassi) RadioButton frontleftrightchassi;
+    @Bind(R.id.rearchassi) RadioButton rearchassi;
+    @Bind(R.id.rearleftrightchassi) RadioButton rearleftrightchassi;
+    @Bind(R.id.dampers) RadioButton dampers;
 
 
 
@@ -98,6 +101,19 @@ public class MainActivity extends AppCompatActivity {
                     titleText.setText(R.string.frontleftandrightchassimp430title);
                     principalText.setText(Html.fromHtml(getResources().getString(R.string.frontleftandrightchassimp430text)));
                 }
+                if (checkedId == rearchassi.getId()){
+                    titleText.setText(R.string.rearchassimp430title);
+                    principalText.setText(Html.fromHtml(getResources().getString(R.string.rearchassimp430text)));
+                }
+                if (checkedId == rearleftrightchassi.getId()){
+                    titleText.setText(R.string.rearleftandrightchassimp430title);
+                    principalText.setText(Html.fromHtml(getResources().getString(R.string.rearleftandrightchassimp430text)));
+                }
+                if (checkedId == dampers.getId()){
+                    titleText.setText(R.string.dampesmp430title);
+                    principalText.setText(Html.fromHtml(getResources().getString(R.string.dampersmp430text)));
+                }
+
 
             }
         });

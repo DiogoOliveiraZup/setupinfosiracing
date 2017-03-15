@@ -37,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
     @Bind(R.id.rearchassi) RadioButton rearchassi;
     @Bind(R.id.rearleftrightchassi) RadioButton rearleftrightchassi;
     @Bind(R.id.dampers) RadioButton dampers;
+    @Bind(R.id.differentialmp430) RadioButton differentialmp430;
+    @Bind(R.id.powerunitmp430) RadioButton powerunitmp430;
 
 
 
@@ -112,6 +114,14 @@ public class MainActivity extends AppCompatActivity {
                 if (checkedId == dampers.getId()){
                     titleText.setText(R.string.dampesmp430title);
                     principalText.setText(Html.fromHtml(getResources().getString(R.string.dampersmp430text)));
+                }
+                if (checkedId == differentialmp430.getId()){
+                    titleText.setText(R.string.differentialmp430title);
+                    principalText.setText(Html.fromHtml(getResources().getString(R.string.differentialmp430text)));
+                }
+                if (checkedId == powerunitmp430.getId()){
+                    titleText.setText(R.string.powerunitmp430title);
+                    principalText.setText(Html.fromHtml(getResources().getString(R.string.powerunitmp430text)));
                 }
 
 

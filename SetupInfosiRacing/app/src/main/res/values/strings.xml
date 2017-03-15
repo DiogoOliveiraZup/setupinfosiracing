@@ -300,4 +300,47 @@
 
      ]]></string>
 
+    <string name="differentialmp430">Diferencial</string>
+    <string name="differentialmp430title">Diferencial</string>
+    <string name="differentialmp430text"><![CDATA[
+
+    <b>Pré-carga de Entrada :</b>A Pré-carga de entrada define uma quantidade de bloqueio do diferencial que estará sempre presente durante a retirada do pé do acelerador, ajustes maiores têm mais força de bloqueio, os ajustes menores têm menos força de bloqueio, mais força de bloqueio gera mais understeer.<br>
+    --------------------------------------------------<br>
+    <b>Entrada de curva :</b> Bloqueio de entrada afeta a quantidade de força produzida tentando manter ambos os lados do diferencial blocados juntos durante a desaceleração na entrada de curva, configurações maiores têm mais força de bloqueio, configurações menores têm menos força de bloqueio, mais força de bloqueio mais understeer.<br>
+    --------------------------------------------------<br>
+    <b>Meio da curva :</b> O bloqueio do meio afeta a força produzida tentando manter ambos os lados do diferencial blocados com qualquer diferença entre a velocidades das rodas, configurações mais altas têm mais força de bloqueio, configurações inferiores têm menos força de bloqueio, quanto mais força de bloqueio o mais understeer desacelerando, mais oversteer enquanto acelerando.<br>
+    --------------------------------------------------<br>
+    <b>Saída da curva :</b> Bloqueio de saída afeta a quantidade de força é produzida tentando manter ambos os lados do diferencial blocados juntos durante reaceleração em saida de curva, configurações maiores têm mais força de bloqueio, configurações menores têm menos força de bloqueio, mais força de bloqueio mais oversteer.<br>
+    --------------------------------------------------<br>
+    <b>Entrada de curva(Enquanto pilota) :</b> Você pode alterar essa configuração enquanto esta pilotando. Bloqueio de entrada afeta a quantidade de força produzida tentando manter ambos os lados do diferencial blocados juntos durante a desaceleração na entrada de curva, configurações maiores têm mais força de bloqueio, configurações menores têm menos força de bloqueio, mais força de bloqueio mais understeer.<br>
+    --------------------------------------------------<br>
+    <b>Pré-carga de Entrada(Enquanto pilota) :</b> Você pode alterar essa configuração enquanto esta pilotando. A Pré-carga de entrada define uma quantidade de bloqueio do diferencial que estará sempre presente durante a retirada do pé do acelerador, ajustes maiores têm mais força de bloqueio, os ajustes menores têm menos força de bloqueio, mais força de bloqueio gera mais understeer.<br>
+
+
+    ]]></string>
+
+    <string name="powerunitmp430">Unidade de potência</string>
+    <string name="powerunitmp430title">Unidade de potência</string>
+    <string name="powerunitmp430text" formatted="false"><![CDATA[
+
+    <b>Consumo de combustível :</b>Este dial controla o consumo limitando a potência do turbo. Cada incremento acima de 0 corta a potência do turbo em 1% - 0 é 100%, 1 é 99%, &#8320 9 é 91%.<br>
+    --------------------------------------------------<br>
+    <b>Recuperação de energia(MGU-K) em frenagem :</b> Quantidade de recuperação que a bateria(MGU-K) fará em frenagem. 0 é o minimo de recuperação. 9 é o máximo de recuperação. O equilibrio do freio precisará ser ajustado para atender(maior valor a carga da frenagem ficara somente sobre os freios, diminuindo o uso do freio motor).<br>
+    --------------------------------------------------<br>
+    <b>Mode de despejo de potência(Fixo ou Otimizado) :</b> Existem modos de Despejo de potência da Bateria(MGU-K): fixos e otimizado. No modo fixo é a potência é despejada acordo com o valor definido no modo fixo. No modo otimizado a potência é despejada em valores constantes abaixo e acima de uma velocidade definida na Velocidade de alteração de Despejo de potência;<br>
+    --------------------------------------------------<br>
+    <b>Despejo de potência no modo Fixo:</b> Nível de potência que a Bateria(MGU-K) irá despejar para acelerar o carro. Os valores crescentes correspondem a um despejo de potência reduzida. Valor 1 despeja o máximo de potência, melhor para ser uti8lizado na classificação. valor 14 é sem despejo de potência.<br>
+    --------------------------------------------------<br>
+    <b>Despejo de potência no modo Otimizado em baixa velocidade: </b> Nível de potência que a Bateria(MGU-K) irá despejar para acelerar o carro enquanto selecionado no modo "Otimizado" em baixas velocidades. Os valores crescentes correspondem a um despejo de potência reduzida. Valor 1 despeja o máximo de potência, melhor para ser uti8lizado na classificação. valor 14 é sem despejo de potência.<br>
+    --------------------------------------------------<br>
+    <b>Despejo de potência no modo Otimizado em alta velocidade :</b> Nível de potência que a Bateria(MGU-K) irá despejar para acelerar o carro enquanto selecionado no modo "Otimizado" em altas velocidades. Os valores crescentes correspondem a um despejo de potência reduzida. Valor 1 despeja o máximo de potência, melhor para ser uti8lizado na classificação. valor 14 é sem despejo de potência.<br>
+    --------------------------------------------------<br>
+    <b>Velocidade de alteração de Despejo de potência :</b> Velocidade do veículo em que a transição de despejo de potência da Bateria(MGU-K) é aplicado os entre níveis de baixa velocidade e alta velocidade quando estiver no modo "Otimizado".<br>
+    --------------------------------------------------<br>
+    <b>Despejo de potência(Acelerador) :</b> Define a posição do acelerador acima da qual a potência amazenada na unidade de potência(MGU-K) começará a ser despejada. O motor produzirá energia total nessa configuração e, em seguida, a MGU-K entrará em operação completa com a aceleração máxima. 0 corresponde a 67,5%(A partir dessa porcentagem do pedal), aumentando em incrementos de 2,5% para 90% na posição 9.<br>
+    --------------------------------------------------<br>
+    <b>Calibração do acelerador :</b> A configuração do pedal do acelerador permite que o motorista selecione o tipo de desempenho do motor quando pisar ou levantar o pé do acelerador, o ajuste 1 tem uma forma em S(imagine um S deitado, como uma linha oscilando) que emula um típico estilo borboleta de controle do acelerador e ajuste 4 tem um mapeamento linear do torque do motor ao pedal do acelerador (50% do acelerador = 50% do torque máximo, etc.), não é possivel modifica esse ajuste do carro apenas na garagem.<br>
+
+    ]]></string>
+
 </resources>

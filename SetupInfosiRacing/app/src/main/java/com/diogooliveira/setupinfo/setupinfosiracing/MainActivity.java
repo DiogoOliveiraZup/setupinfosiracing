@@ -1,14 +1,20 @@
 package com.diogooliveira.setupinfo.setupinfosiracing;
 
+import android.app.Application;
+import android.content.DialogInterface;
 import android.content.pm.ActivityInfo;
+import android.os.Handler;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Html;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import butterknife.Bind;
@@ -40,9 +46,54 @@ public class MainActivity extends AppCompatActivity {
     @Bind(R.id.differentialmp430) RadioButton differentialmp430;
     @Bind(R.id.powerunitmp430) RadioButton powerunitmp430;
 
+    // Description
+    @Bind(R.id.scrollViewDescription) ScrollView scrollViewDescription;
+
+    private boolean showingDescription;
+
+    //@Bind(R.id.backbutton)ImageButton backButton;
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+
+        if (keyCode == KeyEvent.KEYCODE_BACK){
+            if (showingDescription){
+                //backButton.setVisibility(View.GONE);
+                principalText.setVisibility(View.GONE);
+                configRadio.setVisibility(View.VISIBLE);
+                titleText.setText("");
+            }
+        }
+
+        return super.onKeyDown(keyCode, event);
+    }
+
+    @Override
+    public void onBackPressed() {
+
+        if (showingDescription){
+            //backButton.setVisibility(View.GONE);
+            principalText.setVisibility(View.GONE);
+            configRadio.setVisibility(View.VISIBLE);
+            titleText.setText("");
+            showingDescription = false;
+        }else {
+
+            new AlertDialog.Builder(this)
+                    .setMessage("Deseja sair?")
+                    .setPositiveButton("Sim", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            MainActivity.this.finish();
+                            System.exit(0);
+                        }
+                    })
+                    .setNegativeButton("Não", null)
+                    .show();
+        }
 
 
-    @Bind(R.id.backbutton)ImageButton backButton;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,16 +102,23 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
 
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-        backButton.setVisibility(View.GONE);
+        //backButton.setVisibility(View.GONE);
 
             configRadio.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
 
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
 
-                principalText.setVisibility(View.VISIBLE);
-                configRadio.setVisibility(View.GONE);
-                backButton.setVisibility(View.VISIBLE);
+                new Handler().postDelayed(new Runnable() {
+
+                    @Override
+                    public void run() {
+                        principalText.setVisibility(View.VISIBLE);
+                        configRadio.setVisibility(View.GONE);
+                        //backButton.setVisibility(View.VISIBLE);
+                        showingDescription = true;
+                    }
+                }, 400);
 
                 if (checkedId == toeInOut.getId()){
                     titleText.setText(R.string.toeintoeouttitle);
@@ -124,18 +182,15 @@ public class MainActivity extends AppCompatActivity {
                     principalText.setText(Html.fromHtml(getResources().getString(R.string.powerunitmp430text)));
                 }
 
+                // Reseta a posição do ScrollView
+                scrollViewDescription.scrollTo(0,0);
+
 
             }
         });
 
-    }
 
-    @OnClick(R.id.backbutton)
-    public void CloseText(){
-        backButton.setVisibility(View.GONE);
-        principalText.setVisibility(View.GONE);
-        configRadio.setVisibility(View.VISIBLE);
-        titleText.setText("");
+
     }
 
 }
